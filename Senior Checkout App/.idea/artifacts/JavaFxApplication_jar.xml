@@ -1,0 +1,11 @@
+<component name="ArtifactManager">
+  <artifact type="jar" build-on-make="true" name="JavaFxApplication:jar">
+    <output-path>$USER_HOME$/Desktop</output-path>
+    <root id="archive" name="JavaFxApplication.jar">
+      <element id="module-output" name="JavaFxApplication" />
+      <element id="extracted-dir" path="$PROJECT_DIR$/../Senior_Checkout/out/production/Senior_Checkout/jaf-1.1.1/activation.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$PROJECT_DIR$/../Senior_Checkout/out/production/Senior_Checkout/javax.mail.jar" path-in-jar="/" />
+      <element id="file-copy" path="$PROJECT_DIR$/src/META-INF/MANIFEST.MF" />
+    </root>
+  </artifact>
+</component>

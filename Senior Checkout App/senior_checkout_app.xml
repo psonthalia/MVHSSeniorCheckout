@@ -1,0 +1,295 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project name="senior_checkout_app" default="all">
+  
+  
+  <property file="senior_checkout_app.properties"/>
+  <!-- Uncomment the following property if no tests compilation is needed -->
+  <!-- 
+  <property name="skip.tests" value="true"/>
+   -->
+  
+  <!-- Compiler options -->
+  
+  <property name="compiler.debug" value="on"/>
+  <property name="compiler.generate.no.warnings" value="off"/>
+  <property name="compiler.args" value=""/>
+  <property name="compiler.max.memory" value="700m"/>
+  <patternset id="ignored.files">
+    <exclude name="**/*.hprof/**"/>
+    <exclude name="**/*.pyc/**"/>
+    <exclude name="**/*.pyo/**"/>
+    <exclude name="**/*.rbc/**"/>
+    <exclude name="**/*.yarb/**"/>
+    <exclude name="**/*~/**"/>
+    <exclude name="**/.DS_Store/**"/>
+    <exclude name="**/.git/**"/>
+    <exclude name="**/.hg/**"/>
+    <exclude name="**/.svn/**"/>
+    <exclude name="**/CVS/**"/>
+    <exclude name="**/__pycache__/**"/>
+    <exclude name="**/_svn/**"/>
+    <exclude name="**/vssver.scc/**"/>
+    <exclude name="**/vssver2.scc/**"/>
+  </patternset>
+  <patternset id="library.patterns">
+    <include name="*.egg"/>
+    <include name="*.jar"/>
+    <include name="*.ear"/>
+    <include name="*.swc"/>
+    <include name="*.war"/>
+    <include name="*.zip"/>
+    <include name="*.ane"/>
+  </patternset>
+  <patternset id="compiler.resources">
+    <exclude name="**/?*.java"/>
+    <exclude name="**/?*.form"/>
+    <exclude name="**/?*.class"/>
+    <exclude name="**/?*.groovy"/>
+    <exclude name="**/?*.scala"/>
+    <exclude name="**/?*.flex"/>
+    <exclude name="**/?*.kt"/>
+    <exclude name="**/?*.clj"/>
+  </patternset>
+  
+  <!-- JDK definitions -->
+  
+  <property name="jdk.bin.9" value="${jdk.home.9}/bin"/>
+  <path id="jdk.classpath.9">
+    <fileset dir="${jdk.home.9}">
+      <include name="../Home!/java.activation"/>
+      <include name="../Home!/java.base"/>
+      <include name="../Home!/java.compiler"/>
+      <include name="../Home!/java.corba"/>
+      <include name="../Home!/java.datatransfer"/>
+      <include name="../Home!/java.desktop"/>
+      <include name="../Home!/java.instrument"/>
+      <include name="../Home!/java.jnlp"/>
+      <include name="../Home!/java.logging"/>
+      <include name="../Home!/java.management"/>
+      <include name="../Home!/java.management.rmi"/>
+      <include name="../Home!/java.naming"/>
+      <include name="../Home!/java.prefs"/>
+      <include name="../Home!/java.rmi"/>
+      <include name="../Home!/java.scripting"/>
+      <include name="../Home!/java.se"/>
+      <include name="../Home!/java.se.ee"/>
+      <include name="../Home!/java.security.jgss"/>
+      <include name="../Home!/java.security.sasl"/>
+      <include name="../Home!/java.smartcardio"/>
+      <include name="../Home!/java.sql"/>
+      <include name="../Home!/java.sql.rowset"/>
+      <include name="../Home!/java.transaction"/>
+      <include name="../Home!/java.xml"/>
+      <include name="../Home!/java.xml.bind"/>
+      <include name="../Home!/java.xml.crypto"/>
+      <include name="../Home!/java.xml.ws"/>
+      <include name="../Home!/java.xml.ws.annotation"/>
+      <include name="../Home!/javafx.base"/>
+      <include name="../Home!/javafx.controls"/>
+      <include name="../Home!/javafx.deploy"/>
+      <include name="../Home!/javafx.fxml"/>
+      <include name="../Home!/javafx.graphics"/>
+      <include name="../Home!/javafx.media"/>
+      <include name="../Home!/javafx.swing"/>
+      <include name="../Home!/javafx.web"/>
+      <include name="../Home!/jdk.accessibility"/>
+      <include name="../Home!/jdk.attach"/>
+      <include name="../Home!/jdk.charsets"/>
+      <include name="../Home!/jdk.compiler"/>
+      <include name="../Home!/jdk.crypto.cryptoki"/>
+      <include name="../Home!/jdk.crypto.ec"/>
+      <include name="../Home!/jdk.deploy"/>
+      <include name="../Home!/jdk.deploy.controlpanel"/>
+      <include name="../Home!/jdk.dynalink"/>
+      <include name="../Home!/jdk.editpad"/>
+      <include name="../Home!/jdk.hotspot.agent"/>
+      <include name="../Home!/jdk.httpserver"/>
+      <include name="../Home!/jdk.incubator.httpclient"/>
+      <include name="../Home!/jdk.internal.ed"/>
+      <include name="../Home!/jdk.internal.jvmstat"/>
+      <include name="../Home!/jdk.internal.le"/>
+      <include name="../Home!/jdk.internal.opt"/>
+      <include name="../Home!/jdk.internal.vm.ci"/>
+      <include name="../Home!/jdk.jartool"/>
+      <include name="../Home!/jdk.javadoc"/>
+      <include name="../Home!/jdk.javaws"/>
+      <include name="../Home!/jdk.jcmd"/>
+      <include name="../Home!/jdk.jconsole"/>
+      <include name="../Home!/jdk.jdeps"/>
+      <include name="../Home!/jdk.jdi"/>
+      <include name="../Home!/jdk.jdwp.agent"/>
+      <include name="../Home!/jdk.jfr"/>
+      <include name="../Home!/jdk.jlink"/>
+      <include name="../Home!/jdk.jshell"/>
+      <include name="../Home!/jdk.jsobject"/>
+      <include name="../Home!/jdk.jstatd"/>
+      <include name="../Home!/jdk.localedata"/>
+      <include name="../Home!/jdk.management"/>
+      <include name="../Home!/jdk.management.agent"/>
+      <include name="../Home!/jdk.management.cmm"/>
+      <include name="../Home!/jdk.management.jfr"/>
+      <include name="../Home!/jdk.management.resource"/>
+      <include name="../Home!/jdk.naming.dns"/>
+      <include name="../Home!/jdk.naming.rmi"/>
+      <include name="../Home!/jdk.net"/>
+      <include name="../Home!/jdk.pack"/>
+      <include name="../Home!/jdk.packager"/>
+      <include name="../Home!/jdk.packager.services"/>
+      <include name="../Home!/jdk.plugin"/>
+      <include name="../Home!/jdk.plugin.dom"/>
+      <include name="../Home!/jdk.plugin.server"/>
+      <include name="../Home!/jdk.policytool"/>
+      <include name="../Home!/jdk.rmic"/>
+      <include name="../Home!/jdk.scripting.nashorn"/>
+      <include name="../Home!/jdk.scripting.nashorn.shell"/>
+      <include name="../Home!/jdk.sctp"/>
+      <include name="../Home!/jdk.security.auth"/>
+      <include name="../Home!/jdk.security.jgss"/>
+      <include name="../Home!/jdk.snmp"/>
+      <include name="../Home!/jdk.unsupported"/>
+      <include name="../Home!/jdk.xml.bind"/>
+      <include name="../Home!/jdk.xml.dom"/>
+      <include name="../Home!/jdk.xml.ws"/>
+      <include name="../Home!/jdk.zipfs"/>
+      <include name="../Home!/oracle.desktop"/>
+      <include name="../Home!/oracle.net"/>
+    </fileset>
+  </path>
+  
+  <property name="project.jdk.home" value="${jdk.home.9}"/>
+  <property name="project.jdk.bin" value="${jdk.bin.9}"/>
+  <property name="project.jdk.classpath" value="jdk.classpath.9"/>
+  
+  
+  <!-- Project Libraries -->
+  
+  <path id="library.activation.classpath">
+    <pathelement location="${basedir}/../Senior_Checkout/out/production/Senior_Checkout/jaf-1.1.1/activation.jar"/>
+  </path>
+  
+  <path id="library.javax.mail.classpath">
+    <pathelement location="${basedir}/../Senior_Checkout/out/production/Senior_Checkout/javax.mail.jar"/>
+  </path>
+  <!-- Register Custom Compiler Taskdefs -->
+  <property name="javac2.home" value="${idea.home}/lib"/>
+  <path id="javac2.classpath">
+    <fileset dir="${javac2.home}">
+      <include name="javac2.jar"/>
+      <include name="jdom.jar"/>
+      <include name="asm-all*.jar"/>
+      <include name="jgoodies-forms.jar"/>
+    </fileset>
+  </path>
+  <target name="register.custom.compilers">
+    <taskdef name="javac2" classname="com.intellij.ant.Javac2" classpathref="javac2.classpath"/>
+    <taskdef name="instrumentIdeaExtensions" classname="com.intellij.ant.InstrumentIdeaExtensions" classpathref="javac2.classpath"/>
+  </target>
+  
+  <!-- Modules -->
+  
+  <import file="${basedir}/module_javafxapplication.xml"/>
+  
+  <target name="init" description="Build initialization">
+    <!-- Perform any build initialization in this target -->
+  </target>
+  
+  <target name="clean" depends="clean.module.javafxapplication, clean.artifact.javafxapplication" description="cleanup all"/>
+  
+  <target name="build.modules" depends="init, clean, compile.module.javafxapplication" description="build all modules"/>
+  
+  <target name="init.artifacts">
+    <property name="artifacts.temp.dir" value="${basedir}/__artifacts_temp"/>
+    <property name="artifact.output.javafxapplication" value="${basedir}/../../Desktop"/>
+    <property name="artifact.output.javafxapplication:jar" value="${basedir}/../../Desktop"/>
+    <property name="artifact.output.senior" value="${basedir}/../../Desktop"/>
+    <mkdir dir="${artifacts.temp.dir}"/>
+    <property name="artifact.temp.output.JavaFxApplication" value="${artifacts.temp.dir}/JavaFxApplication.jar"/>
+    <property name="temp.jar.path.JavaFxApplication.jar" value="${artifacts.temp.dir}/1/JavaFxApplication.jar"/>
+    <mkdir dir="${artifacts.temp.dir}/1"/>
+    <property name="temp.jar.path.Senior.jar" value="${artifacts.temp.dir}/Senior.jar"/>
+    <taskdef resource="com/sun/javafx/tools/ant/antlib.xml" uri="javafx:com.sun.javafx.tools.ant" classpath="${jdk.home.9}/lib/ant-javafx.jar"/>
+  </target>
+  
+  <target name="clean.artifact.javafxapplication" description="clean JavaFxApplication artifact output">
+    <delete dir="${artifact.output.javafxapplication}"/>
+  </target>
+  
+  <target name="artifact.javafxapplication" depends="init.artifacts, compile.module.javafxapplication" description="Build &#39;JavaFxApplication&#39; artifact" xmlns:fx="javafx:com.sun.javafx.tools.ant">
+    <mkdir dir="${artifact.output.javafxapplication}"/>
+    <copy todir="${artifact.temp.output.JavaFxApplication}">
+      <fileset dir="${javafxapplication.output.dir}"/>
+    </copy>
+    <copy file="${basedir}/src/Main.java" tofile="${artifact.temp.output.JavaFxApplication}/Main.java"/>
+    <copy file="${basedir}/src/UpdateLabel.java" tofile="${artifact.temp.output.JavaFxApplication}/UpdateLabel.java"/>
+    <fx:fileset id="all_but_JavaFxApplication" dir="${artifact.temp.output.JavaFxApplication}" includes="**/*.jar">
+      <exclude name="JavaFxApplication.jar"/>
+    </fx:fileset>
+    <fx:fileset id="all_JavaFxApplication" dir="${artifact.temp.output.JavaFxApplication}" includes="**/*.jar"/>
+    <fx:application id="JavaFxApplication_id" name="JavaFxApplication" mainClass="Main"/>
+    <fx:jar destfile="${artifact.temp.output.JavaFxApplication}/JavaFxApplication.jar">
+      <fx:application refid="JavaFxApplication_id"/>
+      <fileset dir="${artifact.temp.output.JavaFxApplication}" excludes="**/*.jar"/>
+      <fx:resources>
+        <fx:fileset refid="all_but_JavaFxApplication"/>
+      </fx:resources>
+      <manifest>
+        <attribute name="Implementation-Title" value=""/>
+        <attribute name="Implementation-Version" value=""/>
+        <attribute name="Implementation-Vendor" value=""/>
+      </manifest>
+    </fx:jar>
+    <fx:deploy width="600" height="400" updatemode="background" outdir="${artifact.temp.output.JavaFxApplication}/deploy" outfile="JavaFxApplication">
+      <fx:application refid="JavaFxApplication_id"/>
+      <fx:resources>
+        <fx:fileset refid="all_JavaFxApplication"/>
+      </fx:resources>
+    </fx:deploy>
+    <copy todir="${artifact.output.javafxapplication}">
+      <fileset dir="${artifact.temp.output.JavaFxApplication}/deploy"/>
+    </copy>
+    <delete includeemptydirs="true">
+      <fileset dir="${artifact.temp.output.JavaFxApplication}"/>
+    </delete>
+  </target>
+  
+  <target name="artifact.javafxapplication:jar" depends="init.artifacts, compile.module.javafxapplication" description="Build &#39;JavaFxApplication:jar&#39; artifact">
+    <property name="artifact.temp.output.javafxapplication:jar" value="${artifacts.temp.dir}/JavaFxApplication_jar"/>
+    <mkdir dir="${artifact.temp.output.javafxapplication:jar}"/>
+    <jar destfile="${temp.jar.path.JavaFxApplication.jar}" duplicate="preserve" filesetmanifest="mergewithoutmain">
+      <zipfileset dir="${javafxapplication.output.dir}"/>
+      <zipfileset src="${basedir}/../Senior_Checkout/out/production/Senior_Checkout/jaf-1.1.1/activation.jar"/>
+      <zipfileset src="${basedir}/../Senior_Checkout/out/production/Senior_Checkout/javax.mail.jar"/>
+      <zipfileset file="${basedir}/src/META-INF/MANIFEST.MF"/>
+    </jar>
+    <copy file="${temp.jar.path.JavaFxApplication.jar}" tofile="${artifact.temp.output.javafxapplication:jar}/JavaFxApplication.jar"/>
+  </target>
+  
+  <target name="artifact.senior" depends="init.artifacts" description="Build &#39;Senior&#39; artifact">
+    <property name="artifact.temp.output.senior" value="${artifacts.temp.dir}/Senior"/>
+    <mkdir dir="${artifact.temp.output.senior}"/>
+    <jar destfile="${temp.jar.path.Senior.jar}" duplicate="preserve" filesetmanifest="mergewithoutmain">
+      <zipfileset file="${basedir}/../Senior_Checkout/out/production/Senior_Checkout/jaf-1.1.1/activation.jar"/>
+      <zipfileset file="${basedir}/../Senior_Checkout/out/production/Senior_Checkout/javax.mail.jar"/>
+      <zipfileset file="${idea.home}/bin/META-INF/MANIFEST.MF" prefix="META-INF"/>
+      <zipfileset file="${basedir}/src/Main.java"/>
+      <zipfileset file="${basedir}/src/UpdateLabel.java"/>
+    </jar>
+    <copy file="${temp.jar.path.Senior.jar}" tofile="${artifact.temp.output.senior}/Senior.jar"/>
+  </target>
+  
+  <target name="build.all.artifacts" depends="artifact.javafxapplication, artifact.javafxapplication:jar, artifact.senior" description="Build all artifacts">
+    <mkdir dir="${artifact.output.javafxapplication:jar}"/>
+    <copy todir="${artifact.output.javafxapplication:jar}">
+      <fileset dir="${artifact.temp.output.javafxapplication:jar}"/>
+    </copy>
+    <mkdir dir="${artifact.output.senior}"/>
+    <copy todir="${artifact.output.senior}">
+      <fileset dir="${artifact.temp.output.senior}"/>
+    </copy>
+    
+    <!-- Delete temporary files -->
+    <delete dir="${artifacts.temp.dir}"/>
+  </target>
+  
+  <target name="all" depends="build.modules, build.all.artifacts" description="build all"/>
+</project>
