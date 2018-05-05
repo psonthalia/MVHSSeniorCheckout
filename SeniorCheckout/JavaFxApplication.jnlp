@@ -8,10 +8,8 @@
     <update check="background"/>
     <resources>
         <j2se version="9+" href="http://java.sun.com/products/autodl/j2se"/>
-        <jar href="JavaFxApplication.jar" size="13926" download="eager"/>
-        <jar href="Senior.jar" size="672643" download="eager"/>
-        <jar href="activation.jar" size="56290" download="eager"/>
-        <jar href="javax.mail.jar" size="654100" download="eager"/>
+        <jar href="JavaFxApplication.jar" size="14226" download="eager"/>
+        <jar href="Senior.jar" size="672644" download="eager"/>
     </resources>
     <jfx:javafx-desc width="600" height="400" main-class="Main" name="Main"/>
 </jnlp>

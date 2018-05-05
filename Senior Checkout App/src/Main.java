@@ -189,16 +189,16 @@ public class Main extends Application {
                                 thread.interrupt();
                                 finalBody = bodyGeneral;
                                 for (int i = 0; i < values.length; i++) {
-                                    if (i == 4 && values[i].equals("")) { //CCC
+                                    if (i == 5 && values[i].equals("")) { //CCC
                                         finalBody += ccc;
                                     }
-                                    if (i == 5 && values[i].equals("")) { //Library
+                                    if (i == 6 && values[i].equals("")) { //Library
                                         finalBody += library;
                                     }
-                                    if (i == 6 && values[i].equals("")) { //TBC
+                                    if (i == 7 && values[i].equals("")) { //TBC
                                         finalBody += tbc;
                                     }
-                                    if (i == 7 && values[i].equals("")) { //Finance Office
+                                    if (i == 8 && values[i].equals("")) { //Finance Office
                                         finalBody += finance;
                                     }
                                 }
