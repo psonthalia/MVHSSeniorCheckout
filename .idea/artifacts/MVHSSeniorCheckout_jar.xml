@@ -1,9 +1,8 @@
 <component name="ArtifactManager">
   <artifact type="jar" name="MVHSSeniorCheckout:jar">
-    <output-path>$PROJECT_DIR$</output-path>
+    <output-path>$USER_HOME$/Desktop/artifacts/MVHSSeniorCheckout_jar</output-path>
     <root id="archive" name="MVHSSeniorCheckout.jar">
       <element id="module-output" name="MVHSSeniorCheckout" />
-      <element id="library" level="project" name="activation" />
       <element id="extracted-dir" path="$PROJECT_DIR$/MVHS_Senior_Checkout/javax.mail.jar" path-in-jar="/" />
     </root>
   </artifact>

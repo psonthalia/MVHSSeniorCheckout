@@ -26,6 +26,8 @@ import java.io.IOException;
 import java.util.ArrayList;
 import java.util.Properties;
 
+import MVHS_Senior_Checkout.UpdateLabel;
+
 public class Main extends Application {
 
     private static String USER_NAME = "mvhs.seniorcheckout@mvla.net";  // GMail user name including @mvla.net
@@ -151,13 +153,14 @@ public class Main extends Application {
                 String pass = PASSWORD;
 
                 String subject = "IMPORTANT SENIOR CHECKOUT INFORMATION | ACTION REQUIRED";
-                String bodyAllDone = "Congratulations you have completed the requirements for Senior Check-out! Please report to the “EXPRESS CHECK-OUT” line at the theater steps on Senior Check-out Day, Wednesday June 5, 2019 at 9:45 AM to receive your ticket to claim your cap & gown. <br><br> Have you ordered your transcripts? Don’t forget to complete Transcript Request Form and return it to the Registrar on or before June 5th! <br><br> Thank you! <br> MVHS Administration";
+                String bodyAllDone = "Congratulations you have completed the requirements for Senior Check-out! Please report to the “EXPRESS CHECK-OUT” line at the theater steps on Senior Check-out Day, Wednesday June 5, 2019 at 9:45 AM to receive your ticket to claim your cap & gown. <br><br> <i> Have you ordered your transcripts? Don’t forget to complete Transcript Request Form and return it to the Registrar on or before June 5th!</i> <br><br> Thank you! <br> MVHS Administration";
                 String bodyGeneral = "Dear MVHS Senior,<br><br>Senior Checkout is quickly approaching (Weds., June 5)! In order for you to receive your graduation cap & gown and to participate in the Graduation Ceremony, <u>every senior must</u> successfully <u>complete</u> the <u>checkout</u> process.<br><br>";
-                String bodyEnder = "Not sure if your checked-out or what you are missing? Log into the Senior Checkout App, <a href='https://url.mvhs.io/#/'>click here</a>. Have you ordered your transcripts? Don’t forget to complete Transcript Request Form and return it to the Registrar on or before June 5th!<br><br> Thank you!<br>MVHS Administration";
+                String bodyEnder = "Not sure if your checked-out or what you are missing? Log into the Senior Checkout App, <a href='https://url.mvhs.io/#/'>click here</a>, log in with your MVLA account, and go to 'Senior Portal' <i><br><br> Have you ordered your transcripts? Don’t forget to complete Transcript Request Form and return it to the Registrar on or before June 5th!</i><br><br> Thank you!<br>MVHS Administration";
                 String ccc = "Our records indicate that you are missing one or more items from the <b><i>College & Career Center</i></b>. Please follow up with the College & Career Center coordinators to complete the process.<br><br>";
                 String finance = "Our records indicate that you are missing one or more items from the <b><i>Finance Office</i></b>. Please follow up with the Finance Office to complete the process.<br><br>";
                 String library = "Our records indicate that you are missing one or more items from the <b><i>Library</i></b>. Please follow up with the Librarian or Library Assistant to complete the process.<br><br>";
                 String tbc = "Our records indicate that you are missing one or more items from the <b><i>Textbook Center (TBC)</i></b>. Please follow up with the Librarian or Library Assistant to complete the process.<br><br>";
+                String in_danger = "Our records indicate that you will need to submit the <b><i>Long Form for Grade Verification</i></b> before checking out. Please follow up with <b>your Counselor</b> to complete the process and ensure to bring this form with you on check-out day.<br><br>";
 
                 try {
                     BufferedReader br = new BufferedReader(new FileReader(file));
@@ -204,6 +207,9 @@ public class Main extends Application {
                                     }
                                     if (i == 8 && values[i].equals("")) { //Finance Office
                                         finalBody += finance;
+                                    }
+                                    if (i == 8 && values[i].equals("")) { //In Danger
+                                        finalBody += in_danger;
                                     }
                                 }
                                 finalBody += "<br>" + bodyEnder;

@@ -23,7 +23,6 @@
         </SOURCES>
       </library>
     </orderEntry>
-    <orderEntry type="library" exported="" name="activation" level="project" />
     <orderEntry type="library" name="javax.mail" level="project" />
   </component>
 </module>

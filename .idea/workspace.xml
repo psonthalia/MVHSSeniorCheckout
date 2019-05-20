@@ -7,21 +7,13 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="49427a7e-5ff2-4719-8099-08ddeb6615bc" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/javax_mail.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/MVHSSeniorCheckout.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/MVHSSeniorCheckout.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/artifacts/MVHSSeniorCheckout_jar.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/artifacts/MVHSSeniorCheckout_jar.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/activation.xml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/MVHS_Senior_Checkout/out/artifacts/MVHS_Senior_Checkout_jar/MVHS_Senior_Checkout.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/MVHS_Senior_Checkout/out/production/MVHS_Senior_Checkout/META-INF/MANIFEST.MF" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/MVHS_Senior_Checkout/out/production/MVHS_Senior_Checkout/MVHS_Senior_Checkout/Controller.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/MVHS_Senior_Checkout/out/production/MVHS_Senior_Checkout/MVHS_Senior_Checkout/Main$1.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/MVHS_Senior_Checkout/out/production/MVHS_Senior_Checkout/MVHS_Senior_Checkout/Main$2$1.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/MVHS_Senior_Checkout/out/production/MVHS_Senior_Checkout/MVHS_Senior_Checkout/Main$2.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/MVHS_Senior_Checkout/out/production/MVHS_Senior_Checkout/MVHS_Senior_Checkout/Main$3.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/MVHS_Senior_Checkout/out/production/MVHS_Senior_Checkout/MVHS_Senior_Checkout/Main.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/MVHS_Senior_Checkout/out/production/MVHS_Senior_Checkout/MVHS_Senior_Checkout/UpdateLabel$1.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/MVHS_Senior_Checkout/out/production/MVHS_Senior_Checkout/MVHS_Senior_Checkout/UpdateLabel.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/MVHS_Senior_Checkout/out/production/MVHS_Senior_Checkout/MVHS_Senior_Checkout/sample.fxml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/MVHSSeniorCheckout.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/MVHS_Senior_Checkout/src/MVHS_Senior_Checkout/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/MVHS_Senior_Checkout/src/MVHS_Senior_Checkout/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test.csv" beforeDir="false" afterPath="$PROJECT_DIR$/test.csv" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -34,11 +26,35 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/MVHS_Senior_Checkout/src/META-INF/MANIFEST.MF">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="51">
               <caret line="3" selection-start-line="3" selection-end-line="3" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/MVHS_Senior_Checkout/src/MVHS_Senior_Checkout/Main.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-703">
+              <caret line="154" column="89" selection-start-line="154" selection-start-column="34" selection-end-line="154" selection-end-column="89" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/MVHS_Senior_Checkout/src/MVHS_Senior_Checkout/UpdateLabel.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="34">
+              <caret line="2" column="7" selection-start-line="2" selection-start-column="7" selection-end-line="2" selection-end-column="7" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -48,6 +64,9 @@
   <component name="FindInProjectRecents">
     <findStrings>
       <find>updatela</find>
+      <find>UpdateLabel</find>
+      <find>&lt;a</find>
+      <find>sendFromGMail</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -58,22 +77,19 @@
       <list>
         <option value="$PROJECT_DIR$/Senior Checkout App/src/Main.java" />
         <option value="$PROJECT_DIR$/Senior Checkout App/src/META-INF/MANIFEST.MF" />
+        <option value="$PROJECT_DIR$/MVHS_Senior_Checkout/src/MVHS_Senior_Checkout/Main.java" />
       </list>
     </option>
   </component>
   <component name="ProjectFrameBounds" fullScreen="true">
-    <option name="x" value="1680" />
-    <option name="y" value="-232" />
-    <option name="width" value="3008" />
-    <option name="height" value="1692" />
+    <option name="width" value="1680" />
+    <option name="height" value="1050" />
   </component>
   <component name="ProjectView">
     <navigator proportions="" version="1">
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
-      <pane id="PackagesPane" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -99,10 +115,19 @@
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="META-INF" type="462c0819:PsiDirectoryNode" />
             </path>
+            <path>
+              <item name="MVHSSeniorCheckout" type="b2602c69:ProjectViewProjectNode" />
+              <item name="MVHSSeniorCheckout" type="462c0819:PsiDirectoryNode" />
+              <item name="MVHS_Senior_Checkout" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="MVHS_Senior_Checkout" type="462c0819:PsiDirectoryNode" />
+            </path>
           </expand>
           <select />
         </subPane>
       </pane>
+      <pane id="PackagesPane" />
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -157,17 +182,20 @@
       <workItem from="1557731942604" duration="1139000" />
       <workItem from="1557733101815" duration="3136000" />
       <workItem from="1557821579838" duration="628000" />
+      <workItem from="1558374107574" duration="1622000" />
+      <workItem from="1558378763496" duration="146000" />
+      <workItem from="1558380164108" duration="2958000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="4903000" />
+    <option name="totallyTimeSpent" value="9629000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="1680" y="-232" width="3008" height="1692" extended-state="0" />
+    <frame x="0" y="0" width="1680" height="1050" extended-state="0" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.1412677" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.14652015" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Designer" order="2" />
       <window_info id="Image Layers" order="3" />
@@ -203,43 +231,37 @@
     <option name="version" value="1" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/Senior Checkout Data 2018 - Sheet1.csv">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
+    <entry file="file://$PROJECT_DIR$/Senior Checkout Data 2018 - Sheet1.csv" />
     <entry file="file://$PROJECT_DIR$/Senior Checkout App/src/javafx/scene/effect/BloomBuilder.java" />
     <entry file="file://$PROJECT_DIR$/Senior Checkout App/src/javafx/beans/binding/ObjectExpression.java" />
     <entry file="file://$PROJECT_DIR$/Senior Checkout App/src/javafx/scene/control/TableView.java" />
-    <entry file="file://$PROJECT_DIR$/Senior Checkout App/src/Main.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="831">
-          <caret line="231" column="1" selection-start-line="24" selection-end-line="231" selection-end-column="1" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Senior Checkout App/src/UpdateLabel.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="238">
-          <caret line="18" column="32" lean-forward="true" selection-start-line="18" selection-start-column="32" selection-end-line="18" selection-end-column="32" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Senior Checkout App/src/META-INF/MANIFEST.MF">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="68">
-          <caret line="4" selection-start-line="4" selection-end-line="4" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/Senior Checkout App/src/Main.java" />
+    <entry file="file://$PROJECT_DIR$/Senior Checkout App/src/UpdateLabel.java" />
+    <entry file="file://$PROJECT_DIR$/Senior Checkout App/src/META-INF/MANIFEST.MF" />
     <entry file="file://$PROJECT_DIR$/MVHS_Senior_Checkout/src/META-INF/MANIFEST.MF">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="51">
           <caret line="3" selection-start-line="3" selection-end-line="3" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/MVHS_Senior_Checkout/src/MVHS_Senior_Checkout/UpdateLabel.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="34">
+          <caret line="2" column="7" selection-start-line="2" selection-start-column="7" selection-end-line="2" selection-end-column="7" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/MVHS_Senior_Checkout/src/MVHS_Senior_Checkout/Main.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-703">
+          <caret line="154" column="89" selection-start-line="154" selection-start-column="34" selection-end-line="154" selection-end-column="89" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
